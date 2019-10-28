@@ -14,13 +14,19 @@
 function employee(name, salary) {
     return {
         name: name,
-        salary: salary
+        salary: salary,
+        sayMyName: name
+           
     }
+
+
 }
 
 var employeeA = employee("jack", 100);
 var employeeB = employee("Mark", 200);
 var employeeC = employee("Sara", 150);
+
+
 
 
 //create a function when invoked returns the name of that employee.
@@ -102,7 +108,14 @@ function reduce(array, f, acc) {
 // Use the updated version of reduce to write a function max that returns the maximum number in an array of numbers. 
 
 // Write your code here .....
-
+ function max(array){
+    var max = 0;
+    return reduce(array,function(element){
+         return if (element > max){
+         max = element
+        }
+    })
+ }
 
 
 

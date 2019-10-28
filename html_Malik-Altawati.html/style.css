@@ -1,0 +1,10 @@
+body {
+	background-color: yellow;
+}
+header {
+	font-family : Georgia, serif;
+}
+#input {
+	height: 25px;
+	width: 500px;
+}
